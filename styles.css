@@ -61,15 +61,11 @@ button:active {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   width: 100%;
   height: 40%;
   background-color: rgba(13, 13, 63, 0.74);
   padding: 70px;
-}
-.desc {
-  color: white;
-  font-size: 30px;
 }
 #list {
   position: absolute;
@@ -100,7 +96,21 @@ img {
   align-items: center;
   justify-content: center;
   flex-direction: row;
+}
+.section1,
+.section2,
+.section3 {
+  margin: 0 100px 0 100px;
+  height: 200px;
+  width: 200px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
   color: white;
-  font-size: 2em;
-  font-weight: 300;
+  font-size: 1.5em;
 }
