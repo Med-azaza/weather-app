@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Weather app</title>
+</head>
+<body>
+    <div class="infos">
+        <div class="time">22:22 <br><span class='date'> monday,24 march2020</span></div>
+        <div class="city">Paris</div>
+    </div>
+    <div class="search">
+        <input type="text" name="search" id="searchbox" placeholder="Enter city name"><button id="confirm">OK</button>
+    </div>
+    <ul id="list"></ul>
+    <div class="weatherContainer">
+        <div class="imganddeg">
+        <img src="" alt="" id="icon">
+        <p class="deg"></p>
+        </div>
+        <p class="desc"></p>
+    </div>
+    <!--scripts-->
+    <script src="./app.js"></script>
+</body>
+</html>
