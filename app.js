@@ -20,14 +20,14 @@ $(function(){
             $('.city').html(obj.name);
             $('.desc').html(obj.weather[0].description);
             let code=obj.weather[0].icon;
-            $('#icon').attr('src',`http://openweathermap.org/img/w/${code}.png`);
+            $('#icon').attr('src',`https://openweathermap.org/img/w/${code}.png`);
             $('.deg').html(`${parseInt(obj.main.temp)}&deg;C`);
         }
         if(this.readyState==4 && this.status==404) {
             alert('city not found');
         }
     }
-        req.open('GET',`http://api.openweathermap.org/data/2.5/weather?q=${name}&units=metric&appid=${key}`,true);
+        req.open('GET',`https://api.openweathermap.org/data/2.5/weather?q=${name}&units=metric&appid=${key}`,true);
         req.send();
 
 }
